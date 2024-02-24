@@ -21,12 +21,17 @@ int main()
     int i=1;
     printf("enter your number:");
     scanf("%d",&number);
-    while(i<=number)
+    if(number>1)
+    {
+      while(i<=number)
     {
         sum_M *= i;
         i++;
     }
     printf("factorial of number:%d is equal to :%d",number,sum_M);
+    }
+    else
+        printf("negative numbers don't have factorial");
 
     return 0;
 }
